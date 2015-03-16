@@ -12,6 +12,10 @@
 
 		public ActivityLauncher (Activity launcher)
 		{
+			if (null == launcher)
+			{
+				throw new ArgumentNullException ("launcher");
+			}
 			this.activity = launcher;
 		}
 
